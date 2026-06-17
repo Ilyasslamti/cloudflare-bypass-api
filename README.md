@@ -16,10 +16,22 @@ API Ø¬Ø§Ù‡Ø²Ø© ØªØ±Ø³Ù„ Ø£ÙŠ URL ÙˆÙŠØ¹ÙˆØ¯ Ù
 ## Ø·Ø±ÙŠÙ‚Ø© Ø§Ù„Ø§Ø³ØªØ®Ø¯Ø§Ù…
 
 ```bash
-curl -X POST http://localhost:8888/bypass \
+curl -X POST https://veteran-ons-details-liable.trycloudflare.com/bypass \
   -H "X-API-Key: cf_bypass_pro_2026" \
   -H "Content-Type: application/json" \
   -d '{"url": "https://example.com"}'
+```
+
+### Ø§Ø®ØªØ¨Ø§Ø± Ø³Ø±ÙŠØ¹
+```bash
+# Ø§Ù„ØªØ­Ù‚Ù‚ Ù…Ù† Ø£Ù† Ø§Ù„Ø®Ø¯Ù…Ø© Ø­ÙŠØ©
+curl https://veteran-ons-details-liable.trycloudflare.com/
+
+# ØªØ¬Ø§ÙˆØ² Ø­Ù…Ø§ÙŠØ© Cloudflare
+curl -X POST https://veteran-ons-details-liable.trycloudflare.com/bypass \
+  -H "X-API-Key: cf_bypass_pro_2026" \
+  -H "Content-Type: application/json" \
+  -d '{"url": "https://target-site.com"}'
 ```
 
 ## Ø´Ø±Ø§Ø¡ Ø§Ù„Ø®Ø¯Ù…Ø©
